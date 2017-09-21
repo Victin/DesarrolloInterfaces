@@ -6,12 +6,15 @@
         While max <> "NO"
             ReDim Preserve datos(i)
             datos(i).nombre = InputBox("Nombre")
+            cboNombre.Items.Add(datos(i).nombre)
             datos(i).apellido1 = InputBox("Apellido 1")
             datos(i).apellido2 = InputBox("Apellido 2")
             datos(i).edad = InputBox("Edad")
             max = InputBox("Quieres seguir SI/NO")
         End While
-        lstNombre.Items.Add(datos(i).nombre)
-        cboApellido1.Items.Add(lstNombre.SelectedIndex.)
+        cboNombre.SelectedIndex = 0
+        txtApellido1.Text = datos(cboNombre.SelectedIndex).apellido1
+        txtApellido2.Text = datos(cboNombre.SelectedIndex).apellido2
+        txtEdad.Text = datos(cboNombre.SelectedIndex).edad
     End Sub
 End Class

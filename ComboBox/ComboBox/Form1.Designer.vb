@@ -22,23 +22,21 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.cboApellido1 = New System.Windows.Forms.ComboBox()
+        Me.cboNombre = New System.Windows.Forms.ComboBox()
         Me.btnCargar = New System.Windows.Forms.Button()
-        Me.cboApellido2 = New System.Windows.Forms.ComboBox()
-        Me.cboEdad = New System.Windows.Forms.ComboBox()
         Me.lblApellido1 = New System.Windows.Forms.Label()
-        Me.lblApellido2 = New System.Windows.Forms.Label()
-        Me.lblEdad = New System.Windows.Forms.Label()
-        Me.lstNombre = New System.Windows.Forms.ListBox()
+        Me.txtApellido1 = New System.Windows.Forms.TextBox()
+        Me.txtApellido2 = New System.Windows.Forms.TextBox()
+        Me.txtEdad = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'cboApellido1
+        'cboNombre
         '
-        Me.cboApellido1.FormattingEnabled = True
-        Me.cboApellido1.Location = New System.Drawing.Point(402, 14)
-        Me.cboApellido1.Name = "cboApellido1"
-        Me.cboApellido1.Size = New System.Drawing.Size(121, 21)
-        Me.cboApellido1.TabIndex = 0
+        Me.cboNombre.FormattingEnabled = True
+        Me.cboNombre.Location = New System.Drawing.Point(62, 104)
+        Me.cboNombre.Name = "cboNombre"
+        Me.cboNombre.Size = New System.Drawing.Size(121, 21)
+        Me.cboNombre.TabIndex = 0
         '
         'btnCargar
         '
@@ -49,70 +47,50 @@ Partial Class Form1
         Me.btnCargar.Text = "Cargar"
         Me.btnCargar.UseVisualStyleBackColor = True
         '
-        'cboApellido2
-        '
-        Me.cboApellido2.FormattingEnabled = True
-        Me.cboApellido2.Location = New System.Drawing.Point(402, 109)
-        Me.cboApellido2.Name = "cboApellido2"
-        Me.cboApellido2.Size = New System.Drawing.Size(121, 21)
-        Me.cboApellido2.TabIndex = 4
-        '
-        'cboEdad
-        '
-        Me.cboEdad.FormattingEnabled = True
-        Me.cboEdad.Location = New System.Drawing.Point(402, 203)
-        Me.cboEdad.Name = "cboEdad"
-        Me.cboEdad.Size = New System.Drawing.Size(121, 21)
-        Me.cboEdad.TabIndex = 5
-        '
         'lblApellido1
         '
         Me.lblApellido1.AutoSize = True
-        Me.lblApellido1.Location = New System.Drawing.Point(303, 17)
+        Me.lblApellido1.Location = New System.Drawing.Point(12, 107)
         Me.lblApellido1.Name = "lblApellido1"
-        Me.lblApellido1.Size = New System.Drawing.Size(53, 13)
+        Me.lblApellido1.Size = New System.Drawing.Size(44, 13)
         Me.lblApellido1.TabIndex = 6
-        Me.lblApellido1.Text = "Apellido 1"
+        Me.lblApellido1.Text = "Nombre"
         '
-        'lblApellido2
+        'txtApellido1
         '
-        Me.lblApellido2.AutoSize = True
-        Me.lblApellido2.Location = New System.Drawing.Point(303, 112)
-        Me.lblApellido2.Name = "lblApellido2"
-        Me.lblApellido2.Size = New System.Drawing.Size(53, 13)
-        Me.lblApellido2.TabIndex = 7
-        Me.lblApellido2.Text = "Apellido 2"
+        Me.txtApellido1.Location = New System.Drawing.Point(217, 6)
+        Me.txtApellido1.Multiline = True
+        Me.txtApellido1.Name = "txtApellido1"
+        Me.txtApellido1.Size = New System.Drawing.Size(100, 256)
+        Me.txtApellido1.TabIndex = 7
         '
-        'lblEdad
+        'txtApellido2
         '
-        Me.lblEdad.AutoSize = True
-        Me.lblEdad.Location = New System.Drawing.Point(303, 206)
-        Me.lblEdad.Name = "lblEdad"
-        Me.lblEdad.Size = New System.Drawing.Size(32, 13)
-        Me.lblEdad.TabIndex = 8
-        Me.lblEdad.Text = "Edad"
+        Me.txtApellido2.Location = New System.Drawing.Point(339, 6)
+        Me.txtApellido2.Multiline = True
+        Me.txtApellido2.Name = "txtApellido2"
+        Me.txtApellido2.Size = New System.Drawing.Size(100, 256)
+        Me.txtApellido2.TabIndex = 8
         '
-        'lstNombre
+        'txtEdad
         '
-        Me.lstNombre.FormattingEnabled = True
-        Me.lstNombre.Location = New System.Drawing.Point(13, 13)
-        Me.lstNombre.Name = "lstNombre"
-        Me.lstNombre.Size = New System.Drawing.Size(120, 212)
-        Me.lstNombre.TabIndex = 9
+        Me.txtEdad.Location = New System.Drawing.Point(464, 6)
+        Me.txtEdad.Multiline = True
+        Me.txtEdad.Name = "txtEdad"
+        Me.txtEdad.Size = New System.Drawing.Size(100, 256)
+        Me.txtEdad.TabIndex = 9
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(832, 274)
-        Me.Controls.Add(Me.lstNombre)
-        Me.Controls.Add(Me.lblEdad)
-        Me.Controls.Add(Me.lblApellido2)
+        Me.Controls.Add(Me.txtEdad)
+        Me.Controls.Add(Me.txtApellido2)
+        Me.Controls.Add(Me.txtApellido1)
         Me.Controls.Add(Me.lblApellido1)
-        Me.Controls.Add(Me.cboEdad)
-        Me.Controls.Add(Me.cboApellido2)
         Me.Controls.Add(Me.btnCargar)
-        Me.Controls.Add(Me.cboApellido1)
+        Me.Controls.Add(Me.cboNombre)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -120,12 +98,10 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents cboApellido1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cboNombre As System.Windows.Forms.ComboBox
     Friend WithEvents btnCargar As Button
-    Friend WithEvents cboApellido2 As System.Windows.Forms.ComboBox
-    Friend WithEvents cboEdad As System.Windows.Forms.ComboBox
     Friend WithEvents lblApellido1 As Label
-    Friend WithEvents lblApellido2 As Label
-    Friend WithEvents lblEdad As Label
-    Friend WithEvents lstNombre As ListBox
+    Friend WithEvents txtApellido1 As TextBox
+    Friend WithEvents txtApellido2 As TextBox
+    Friend WithEvents txtEdad As TextBox
 End Class
