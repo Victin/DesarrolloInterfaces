@@ -13,6 +13,8 @@
             max = InputBox("Quieres seguir SI/NO")
         End While
         cboNombre.SelectedIndex = 0
+    End Sub
+    Sub mostrarDatos()
         txtApellido1.Text = datos(cboNombre.SelectedIndex).apellido1
         txtApellido2.Text = datos(cboNombre.SelectedIndex).apellido2
         txtEdad.Text = datos(cboNombre.SelectedIndex).edad

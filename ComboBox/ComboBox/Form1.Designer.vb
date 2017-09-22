@@ -28,6 +28,7 @@ Partial Class Form1
         Me.txtApellido1 = New System.Windows.Forms.TextBox()
         Me.txtApellido2 = New System.Windows.Forms.TextBox()
         Me.txtEdad = New System.Windows.Forms.TextBox()
+        Me.btnVer = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'cboNombre
@@ -80,11 +81,21 @@ Partial Class Form1
         Me.txtEdad.Size = New System.Drawing.Size(100, 256)
         Me.txtEdad.TabIndex = 9
         '
+        'btnVer
+        '
+        Me.btnVer.Location = New System.Drawing.Point(602, 136)
+        Me.btnVer.Name = "btnVer"
+        Me.btnVer.Size = New System.Drawing.Size(172, 23)
+        Me.btnVer.TabIndex = 10
+        Me.btnVer.Text = "Ver"
+        Me.btnVer.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(832, 274)
+        Me.Controls.Add(Me.btnVer)
         Me.Controls.Add(Me.txtEdad)
         Me.Controls.Add(Me.txtApellido2)
         Me.Controls.Add(Me.txtApellido1)
@@ -104,4 +115,5 @@ Partial Class Form1
     Friend WithEvents txtApellido1 As TextBox
     Friend WithEvents txtApellido2 As TextBox
     Friend WithEvents txtEdad As TextBox
+    Friend WithEvents btnVer As Button
 End Class
