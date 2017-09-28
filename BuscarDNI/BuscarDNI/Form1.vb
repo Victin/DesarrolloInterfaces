@@ -31,7 +31,10 @@
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        'Recorrer desde el indice seleccionado hasta el ultimo elemento del array
         For j = cbxDNI.SelectedIndex To UBound(agenda) - 1
+            'Sumar uno a cada indice donde estas, la posicion a eliminar se le suma uno por lo cual deja de ser ese
+            'indice y no se puede seleccionar
             agenda(j) = agenda(j + 1)
         Next
         cbxDNI.Items.Remove(cbxDNI.SelectedIndex)
