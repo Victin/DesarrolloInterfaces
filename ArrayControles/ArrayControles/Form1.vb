@@ -22,7 +22,9 @@
         Next
     End Sub
 
-    Private Sub Prueba(ByVal Sender As Object, ByVal e As System.EventArgs)
-        MsgBox("Control " + CType(Sender, Button).Tag.ToString()) 'Recoge el indice de donde has pulsado
+    Private Sub Prueba(ByVal Variable As Object, ByVal e As System.EventArgs)
+        MsgBox("Control " + CType(Variable, Button).Tag.ToString()) 'Recoge el indice de donde has pulsado
+        'CType(Variable, Button).BackColor = Color.Aqua // Esto es igual
+        Variable.BackColor = Color.Aqua
     End Sub
 End Class
