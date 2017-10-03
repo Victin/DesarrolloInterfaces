@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.txtPantalla = New System.Windows.Forms.TextBox()
+        Me.btnSala1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtPantalla
@@ -35,11 +36,21 @@ Partial Class Form1
         Me.txtPantalla.Text = "Proyector"
         Me.txtPantalla.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'btnSala1
+        '
+        Me.btnSala1.Location = New System.Drawing.Point(12, 250)
+        Me.btnSala1.Name = "btnSala1"
+        Me.btnSala1.Size = New System.Drawing.Size(75, 23)
+        Me.btnSala1.TabIndex = 1
+        Me.btnSala1.Text = "Sala 1"
+        Me.btnSala1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(609, 272)
+        Me.ClientSize = New System.Drawing.Size(609, 285)
+        Me.Controls.Add(Me.btnSala1)
         Me.Controls.Add(Me.txtPantalla)
         Me.Name = "Form1"
         Me.Text = "Butacas Cine"
@@ -49,4 +60,5 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents txtPantalla As TextBox
+    Friend WithEvents btnSala1 As Button
 End Class
