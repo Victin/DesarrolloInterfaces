@@ -23,7 +23,11 @@
     End Sub
 
     Private Sub accionClick(ByVal Boton As Object, ByVal e As System.EventArgs)
-        Boton.BackColor = Color.Red
+        If Boton.BackColor = Color.Aqua Then
+            Boton.BackColor = Color.Crimson
+        ElseIf Boton.BackColor = Color.Crimson Then
+            Boton.BackColor = Color.Aqua
+        End If
     End Sub
 
 End Class
