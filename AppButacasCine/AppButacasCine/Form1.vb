@@ -6,7 +6,7 @@
         For j = 0 To 3 'Tiene que hacer esto 4 veces (Se crean 4 filas de butacas)
             For i = 0 To 13 'Crea una fila con 14 butacas
                 Dim variable As Integer
-                variable += 1
+                variable += 1 'Cada vez que haga 1 recorrido el bucle se seuma al valor 1
 
                 Dim hor As New Button
                 hor.Name = variable
