@@ -1,33 +1,23 @@
 ﻿Public Class Form1
-
-    Dim altura As Integer = 80
-
     Private Sub btnSala1_Click(sender As Object, e As EventArgs) Handles btnSala1.Click
-        For j = 0 To 3 'Tiene que hacer esto 4 veces (Se crean 4 filas de butacas)
-            For i = 0 To 13 'Crea una fila con 14 butacas
-                Dim variable As Integer
-                variable += 1 'Cada vez que haga 1 recorrido el bucle se seuma al valor 1
-
-                Dim hor As New Button
-                hor.Name = variable
-                hor.Tag = i
-                hor.BackColor = Color.Aqua
-                hor.Size = New Size(40, 40)
-                hor.Location = New Point(40 * (i + 1 / 2), altura)
-                hor.Text = hor.Name
-                Me.Controls.Add(hor)
-                AddHandler hor.Click, AddressOf accionClick
-            Next
-            altura = altura + 40
-        Next
+        filas = 3
+        numero = 13
+        salaAux = sala1
+        'Me.Close()
+        Form2.Show()
     End Sub
 
-    Private Sub accionClick(ByVal Boton As Object, ByVal e As System.EventArgs)
-        If Boton.BackColor = Color.Aqua Then
-            Boton.BackColor = Color.Crimson
-        ElseIf Boton.BackColor = Color.Crimson Then
-            Boton.BackColor = Color.Aqua
-        End If
+    Private Sub btnSala2_Click(sender As Object, e As EventArgs) Handles btnSala2.Click
+        filas = 5
+        numero = 13
+        'Me.Close()
+        Form3.Show()
     End Sub
 
+    Private Sub btnSala3_Click(sender As Object, e As EventArgs) Handles btnSala3.Click
+        filas = 1
+        numero = 13
+        'Me.Close()
+        Form4.Show()
+    End Sub
 End Class
