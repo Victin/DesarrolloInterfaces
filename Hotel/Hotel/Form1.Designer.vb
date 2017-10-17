@@ -179,6 +179,7 @@ Partial Class Form1
         Me.cmbTemporada.Name = "cmbTemporada"
         Me.cmbTemporada.Size = New System.Drawing.Size(121, 21)
         Me.cmbTemporada.TabIndex = 13
+        Me.cmbTemporada.Text = "Elige una opcion"
         '
         'btnVisualizar
         '
